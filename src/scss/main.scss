@@ -156,7 +156,7 @@
     align-items: flex-end;
     justify-content: flex-start;
     &:not(:last-child) {
-      @include adaptiveValue("margin-bottom", 30, 15);
+      @include adaptiveValue("margin-bottom", 30, 16);
     }
   }
   // .item-columns__img
