@@ -184,6 +184,7 @@
     }
   }
 }
+
 // Третий блок
 .picture-body {
   @include adaptiveValue("padding-top", 150, 30);
@@ -270,6 +271,7 @@
   &__ibg-pic {
   }
 }
+
 // Шестой блок
 .message-items {
   padding-top: rem(50);
@@ -364,5 +366,116 @@
       border-bottom: 0;
       transform: translateY(-30%);
     }
+  }
+}
+
+// Седьмой блок
+.items-slider {
+  @include adaptiveValue("padding-top", 150, 50, 1115, 768, 1);
+  @include adaptiveValue("padding-bottom", 150, 50, 1115, 768, 1);
+  // .items-slider__container
+  &__container {
+  }
+  // .items-slider__head
+  &__head {
+    max-width: rem(690);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 32, 20);
+    }
+  }
+  // .items-slider__title
+  &__title {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 8, 4);
+    }
+  }
+  // .items-slider__text
+  &__text {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: 162%;
+  }
+  // .items-slider__slider
+  &__slider {
+    &:not(:last-child) {
+      @include adaptiveValue("padding-bottom", 64, 44);
+    }
+  }
+  // .items-slider__wrapper
+  &__wrapper {
+  }
+  // .items-slider__slide
+  &__slide {
+    display: flex;
+  }
+}
+
+.swiper {
+  padding: rem(20);
+  margin: 0 rem(-20);
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.slider-item {
+  height: 100%;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  // .slider-item__ibg-image
+  &__ibg-image {
+    // .slider-item__ibg-image_padding
+    &_padding {
+      padding: 0 0 53.16% 0;
+    }
+  }
+  // .slider-item__ibg-pic
+  &__ibg-pic {
+    border-radius: 8px 8px 0 0;
+  }
+
+  // .slider-item__body
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: rem(30);
+  }
+  // .slider-item__subtitle
+  &__subtitle {
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: 175%;
+    span {
+      font-weight: 700;
+    }
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 13, 8);
+    }
+  }
+  // .slider-item__title
+  &__title {
+    flex: 1 1 auto;
+    font-weight: 700;
+    font-size: rem(24);
+    line-height: 167%;
+    transition: color 0.1s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #02897a;
+      }
+    }
+    @media (max-width: $mobileSmall) {
+      text-align: center;
+    }
+  }
+  // .slider-item__link
+  &__link {
   }
 }
