@@ -24,3 +24,13 @@
 .swiper-pagination-bullet-active {
   background-color: #02897a;
 }
+
+.swiper-dotts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
