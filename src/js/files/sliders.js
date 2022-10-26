@@ -188,6 +188,85 @@ function initSliders() {
       // События
       on: {},
     });
+    new Swiper(".reviews-slider__slider", {
+      // Указываем скласс нужного слайдера
+      // Подключаем модули слайдера
+      // для конкретного случая
+      modules: [Navigation, Pagination],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      // autoHeight: true,
+      speed: 800,
+
+      //touchRatio: 0,
+      //simulateTouch: false,
+      // loop: true,
+      grabCursor: true,
+      //preloadImages: false,
+      //lazy: true,
+
+      /*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+      // Пагинация
+
+      pagination: {
+        el: ".swiper-points",
+        clickable: true,
+        type: "bullets",
+      },
+
+      // Скроллбар
+      /*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+      // Кнопки "влево/вправо"
+      //   navigation: {
+      //     prevEl: ".swiper-button-prev",
+      //     nextEl: ".swiper-button-next",
+      //   },
+
+      // Брейкпоинты
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+          // autoHeight: true,
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1268: {
+          slidesPerView: 3,
+          spaceBetween: 60,
+        },
+      },
+
+      // События
+      on: {},
+    });
   }
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
