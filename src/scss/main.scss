@@ -203,7 +203,12 @@
     @media (min-width: $mobileSmall) {
       align-items: center;
     }
+    // .picture-body__container_colmnreverse
+    &_colmnreverse {
+      flex-direction: column-reverse;
+    }
   }
+
   // .picture-body__content
   &__content {
     flex: 1 1 43.5%;

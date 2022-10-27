@@ -138,7 +138,7 @@
   // .form-column__title
   &__title {
     max-width: rem(280);
-    font-weight: 500;
+    font-weight: 700;
     @include adaptiveValue("font-size", 20, 18);
     line-height: 1.5;
     &:not(:last-child) {
@@ -160,6 +160,7 @@
   // .form-column__label
   &__label {
     line-height: 1.6;
+    font-weight: 500;
   }
 
   // .form-column__input
