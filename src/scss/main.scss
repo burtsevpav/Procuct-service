@@ -205,7 +205,9 @@
     }
     // .picture-body__container_colmnreverse
     &_colmnreverse {
-      flex-direction: column-reverse;
+      @media (max-width: $mobileSmall) {
+        flex-direction: column-reverse;
+      }
     }
   }
 
