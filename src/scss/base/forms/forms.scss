@@ -12,6 +12,10 @@
   &__button {
   }
   &__error {
+    padding-top: rem(3);
+    color: red;
+    font-size: rem(14);
+    font-weight: 500;
   }
 }
 //</FORM>

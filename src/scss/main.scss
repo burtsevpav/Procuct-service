@@ -698,7 +698,16 @@
   border: 1px solid #dedede;
   border-radius: 5px;
   // .reviews-card__rating
-  &__rating {
+  // &__rating {
+  //   &:not(:last-child) {
+  //     @include adaptiveValue("margin-bottom", 16, 10);
+  //   }
+  // }
+  // .reviews-card__stars
+  &__stars {
+    color: #f3cd03;
+    font-size: rem(23);
+    line-height: 1;
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 16, 10);
     }

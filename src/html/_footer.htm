@@ -59,25 +59,29 @@
         <h3 class="form-column__title">Knowing you're always on the best energy deal.</h3>
         <form name="form" action="#" class="form-column">
           <div class="form-column__item">
-            <label class="form-column__label" for="name">Your name</label>
+            <label class="form-column__label" for="name-1">Your name</label>
             <input
-              id="name"
+              data-validate
+              data-required
+              id="name-1"
               autocomplete="off"
               type="text"
               name="name"
-              data-error="Ошибка"
+              data-error="Error! Enter your name!"
               placeholder="Enter your name"
               class="form-column__input input"
             />
           </div>
           <div class="form-column__item">
-            <label class="form-column__label" for="email">Your E-mail</label>
+            <label class="form-column__label" for="email-1">Your E-mail</label>
             <input
-              id="email"
+              data-validate
+              data-required
+              id="email-1"
               autocomplete="off"
               type="email"
               name="email"
-              data-error="Ошибка"
+              data-error="Error! Enter your E-mail!"
               placeholder="Enter your e-mail"
               class="form-column__input input"
             />
