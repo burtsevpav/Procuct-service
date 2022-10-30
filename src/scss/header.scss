@@ -129,7 +129,7 @@
     transition: all 0.2s ease 0s;
     @media (any-hover: hover) {
       &:hover {
-        text-shadow: 0 0 0.6px #22343d, 0 0 0.6px #22343d;
+        color: #02897a;
         transform: scale(1.03);
       }
     }
