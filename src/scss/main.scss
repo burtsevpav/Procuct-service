@@ -641,6 +641,11 @@
     // .slider-card__button
     &__button {
       border: none;
+      @media (any-hover: hover) {
+        &:hover {
+          border: none;
+        }
+      }
     }
   }
 }
