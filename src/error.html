@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Ошибка" })
+  <body>
+    <div class="wrapper header-hide">@@include('html/_header.htm',{})</div>
+    @@include('html/_js.htm',{})
+    <main class="page">
+      <section data-fullscreen class="error-page">
+        <div class="error-page__items">
+          <h2 class="error-page__title">404</h2>
+          <h3 class="error-page__subtitle">Not found</h3>
+          <p class="error-page__text">The resource requested could not be found on this server</p>
+          <a href="index.html" class="error-page__button button">GO HOME</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
